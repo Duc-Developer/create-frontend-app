@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  frontend:
+    container_name: "frontend"
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: yarn dev
+    ports:
+      - "4006:4006"
+    stdin_open: true
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    restart: always

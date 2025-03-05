@@ -1,0 +1,33 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "printWidth": 150,
+  "bracketSpacing": true,
+  "trailingComma": "es5",
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "bracketSameLine": false,
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "^(@app|@/app)/(.*)$",
+    "^(@pages|@/pages)/(.*)$",
+    "^(@components|@/components)/(.*)$",
+    "^(@redux|@/redux)/(.*)$",
+    "^(@hooks|@/hooks)/(.*)$",
+    "^(@utils|@/utils)/(.*)$",
+    "^(@services|@/services)/(.*)$",
+    "^(@constants|@/constants)/(.*)$",
+    "^(@config|@/config)/(.*)$",
+    "^(@assets|@/assets)/(.*)$",
+    "^(@images|@/images)/(.*)$",
+    "^(@icons|@/icons)/(.*)$",
+    "^(@routes|@/routes)/(.*)$",
+    "^(@models|@/models)/(.*)$",
+    "^[./].*(?<!.scss)$",
+    "^(@styles|@/styles)/(.*)$",
+    ".*(scss|css)$"
+  ]
+}

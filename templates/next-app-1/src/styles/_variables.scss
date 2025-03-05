@@ -1,0 +1,11 @@
+/** @caution: this file only define common variables for scss. Do not define another 
+* when u define here, u can use them for all .scss file inside `src` folder
+*/
+
+/** for light mode */
+$background: #ffffff;
+$foreground: #171717;
+
+/** for dark mode */
+$dark-background: #0a0a0a;
+$dark-foreground: #ededed;

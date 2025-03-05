@@ -1,0 +1,4 @@
+.base-table .ant-table-thead > tr > th {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
