@@ -20,7 +20,7 @@ jobs:
         run: echo "Environment Mode is $MODE"
       - run: bun install
       - name: Publish
-        run: bun publish
+        run: npm publish
         env:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
