@@ -1,6 +1,6 @@
 {
   "name": "init-frontend-app",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "create.js",
   "bin": {
     "init-frontend-app": "./create.js"
