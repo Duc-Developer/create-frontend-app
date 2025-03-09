@@ -49,6 +49,7 @@ const DIRTY_FILES = [
   ".DS_Store",
   '.idea',
 ];
+
 function copyTemplateFiles(templateName, targetDir, progressBar, totalFiles) {
   const templatePath = path.join(TEMPLATES_DIR, templateName);
   const files = fs.readdirSync(templatePath);
@@ -70,6 +71,10 @@ function copyTemplateFiles(templateName, targetDir, progressBar, totalFiles) {
         totalFiles
       );
     } else {
+      if (!fs.existsSync(src)) {
+        console.warn(`Warning: File ${src} is missing.`);
+        return;
+      }
       fs.copyFileSync(src, dest);
       progressBar.increment();
       const percentage = (progressBar.value / totalFiles) * 100;

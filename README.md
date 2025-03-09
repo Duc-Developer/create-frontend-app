@@ -12,4 +12,6 @@ The following templates are available in the `templates` folder:
 
 + <span style="font-size: 1.3em;font-weight: bold; color: green;">next-app-1</span>: bun with Nextjs, Scss, TailwindCSS, react-query. [Read more](/templates/next-app-1/README.md)
 
+### 2. Reactjs
+
 + <span style="font-size: 1.3em;font-weight: bold; color:rgb(127, 92, 240);">react-app-1</span>: npm with Reactjs, antd, Scss, TailwindCSS, axios, react-query, mobx,.... [Read more](/templates/react-app-1/README.md)
