@@ -1,0 +1,21 @@
+{
+  "common": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "darkMode": "Dark mode",
+    "lightMode": "Light mode"
+  },
+
+  "homePage": {
+    "title": "Home page",
+    "description": "This is the home page"
+  },
+
+  "welcomePage": {
+    "title": "Welcome to nextjs",
+    "goToHomePage": "Go to home page",
+    "aboutMe": "About me",
+    "contact": "Contact",
+    "myBlog": "My blog"
+  }
+}
