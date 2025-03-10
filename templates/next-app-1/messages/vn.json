@@ -1,0 +1,21 @@
+{
+  "common": {
+    "confirm": "Xác nhận",
+    "cancel": "Hủy",
+    "darkMode": "Chế độ tối",
+    "lightMode": "Chế độ sáng"
+  },
+
+  "homePage": {
+    "title": "Trang chủ",
+    "description": "Đây là trang chủ"
+  },
+
+  "welcomePage": {
+    "title": "Chào mừng bạn đến với nextjs",
+    "goToHomePage": "Đi đến trang chủ",
+    "aboutMe": "Về tôi",
+    "contact": "Liên hệ",
+    "myBlog": "Blog của tôi"
+  }
+}

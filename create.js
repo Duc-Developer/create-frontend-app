@@ -35,6 +35,24 @@ function getTemplateDescriptions() {
   return descriptions;
 }
 
+function generateGitIgnore(targetDir) {
+  const gitignoreContent = `
+node_modules
+dist
+build
+.bun
+.bun.lock
+.bun.lockb
+.yarn.lock
+package-lock.json
+yarn-error.log
+npm-debug.log
+.DS_Store
+.idea
+  `;
+  fs.writeFileSync(path.join(targetDir, '.gitignore'), gitignoreContent.trim());
+}
+
 const DIRTY_FILES = [
   "node_modules",
   "dist",
@@ -142,11 +160,12 @@ async function createProject() {
     },
     cliProgress.Presets.shades_classic
   );
+
   progressBar.start(totalFiles, 0);
-
   copyTemplateFiles(selectedTemplate, targetDir, progressBar, totalFiles);
-
   progressBar.stop();
+  
+  generateGitIgnore(targetDir);
 
   console.log(
     `Project "${answers.projectName}" created from template "${selectedTemplate}"`
