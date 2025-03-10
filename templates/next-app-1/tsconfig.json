@@ -2,7 +2,6 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
       "@app/*": ["src/app/*"],
       "@components/*": ["src/components/*"],
       "@constants/*": ["src/constants/*"],
@@ -11,6 +10,8 @@
       "@services/*": ["src/services/*"],
       "@utils/*": ["src/utils/*"],
       "@styles/*": ["src/styles/*"],
+      "@messages/*": ["src/messages/*"],
+      "@i18n/*": ["src/i18n/*"],
       "@images/*": ["public/images/*"],
       "@icons/*": ["public/icons/*"]
     },
